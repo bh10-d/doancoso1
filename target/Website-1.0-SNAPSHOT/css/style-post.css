@@ -1,0 +1,422 @@
+body,*,html {
+    margin: 0;
+    padding: 0;
+  
+  }
+
+/* css phan header trang web */
+header {
+    width: 100%;
+  }
+  
+  header .header {
+    width: 100%;
+    height: 80px;
+    background-color: #252932;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    z-index: 999;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    font-family: 'Lobster Two', cursive;
+  }
+  header .header .logo {
+    width: 150px;
+  }
+  header .header .logo img{
+    width: 100%;
+    height: auto;
+  }
+  
+  header .header .navbar-search {
+    box-sizing: border-box;
+    padding: 0;
+    width: 50%;
+    height: 40px;
+  }
+  header .header .navbar-search input[type=text]{
+    width: 80%;
+    height: 40px;
+    float:left;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding:15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header .header .navbar-search button[type=submit]{
+    width: 20%;
+    padding: 5px;
+    height:40px;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 10px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 0 5px 5px 0;
+  }
+  @media only screen and (max-width: 970px) {
+    
+    header .header .navbar-search{
+        display: none;
+    }
+    header .header .logo {
+        width: 150px;
+        margin: 10px auto;
+    }
+    .SignIn-LogIn {
+        display: none;
+    }
+  }
+  
+  /* navbar */
+  nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  nav .navbar {
+    
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+  
+  }
+  
+  nav .navbar .nav-sign {
+    display: none;
+  }
+  nav .navbar .bars-reponsive{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  nav .navbar .bars-reponsive a.closebtn{
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    text-decoration: none;
+    color: greenyellow;
+  }
+  nav .navbar .bars-reponsive a.closebtn:hover{
+    color: white;
+  }
+  nav .navbar .bars-reponsive .bars-reponsive-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  
+  }
+  nav .navbar .bars-reponsive .bars-reponsive-content a{
+    display: block;
+    padding: 8px;
+    font-size: 30px;
+    text-decoration: none;
+    color: greenyellow;
+  
+  }
+  nav .navbar .bars-reponsive .bars-reponsive-content a:hover{
+    color: white;
+  }
+  /* css cua nut search */
+  nav .navbar .search-sign {
+    display: none;
+  }
+  .navbar .search-responsive {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    z-index: 999;
+  }
+  .navbar .search-responsive a.closebtn{
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    text-decoration: none;
+    color: greenyellow;
+  }
+  .navbar .search-responsive .search-responsive-content{
+    position: relative;
+    top: 45%;
+    background-color: red;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+  
+  }
+  .navbar .search-responsive .search-responsive-content input[type=text]{
+    float: left;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+  }
+  .navbar .search-responsive .search-responsive-content button[type=submit]{
+    float: left;
+    width: 15%;
+    height: 44px;
+    padding:3px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background-color: greenyellow;
+  }
+  
+  .SignIn-LogIn-nav {
+    display: none
+  }
+  
+  nav .navbar .navbar-link a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+  }
+
+  
+  header .header .navbar-search form{
+    width: 100%;
+    padding: 0 100px;   
+  }
+  /* navbar responsive */
+  @media only screen and (max-width: 970px) {
+    
+    nav .navbar {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    nav .navbar .navbar-link {
+        display: none;
+        
+    }
+    
+    nav .navbar .nav-sign {
+        display: inline-block;
+        z-index: 99;
+    }
+    nav .navbar .nav-sign button{
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .nav-sign button:active{
+        color: white;
+    }
+    nav .navbar .search-sign {
+        display: inline-block;
+        z-index: 99;
+        
+    }
+    nav .navbar .search-sign button{
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .search-sign button:active{
+        color: white;
+    }
+    nav .navbar .SignIn-LogIn-nav{
+        display: inline-block;
+        z-index: 99; 
+    }
+    nav .navbar .SignIn-LogIn-nav button {
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .SignIn-LogIn-nav button:active{
+        color:aliceblue;
+    }
+  }
+  /* end */
+
+/*body*/
+
+.img-post{
+    max-width: 100%;
+}
+
+.img-user{
+  width: 40px;
+}
+
+@media screen and (max-width:768px){
+  .img-user{
+    width: 30px;
+  }
+  .media-body h4{
+    font-size: 20px;
+  }
+  .media-body p{
+    font-size: 15px;
+  }
+}
+
+.s-bar{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.media-body a:hover{
+    color: #8CC63F;
+}
+
+.nav-link{
+    color: #7D7D7D;
+}
+
+.nav-link:hover{
+    background-color: #8CC63F;
+    color: white;
+    border-radius: 5px;
+}
+
+.more a{
+  text-decoration: none;
+  color: orange;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.more a:hover{
+  color: #8CC63F;
+}
+
+
+/*end body*/
+
+/* css cua footer */
+footer {
+    background-color: #252932;
+    position: relative;
+    /* top: 100px; */
+    color: white;
+  
+  }
+  footer .all-element-footer{
+    width: 100%;
+    
+  }
+  
+  footer .all-element-footer .element-footer-info i{
+    margin-right:10px;
+  }
+  footer h2{
+    text-align: center;
+    
+    padding: 20px 0 30px;
+    height: 100px;
+  }
+  footer .element-footer-info .logo {
+    width: 150px;
+    
+  }
+  footer .element-footer-info .logo img{
+    width: 100%;
+    height: auto;
+  }
+  footer .all-element-footer{
+    display: flex;
+    justify-content: space-around;
+  }
+  footer .all-element-footer .element-footer-info{
+    position: relative;
+    top: -50px;
+    width: 30%;
+  }
+  .element-footer {
+    max-width: 18%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .element-footer a{
+    color:#A4A4A4;
+  }
+  .element-footer input {
+    float: left;
+    outline: none;
+    padding-left: 5px;
+  }
+  
+  .element-footer button{
+    float: left;
+    background-color: #252932;
+    color: greenyellow;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+  }
+  .element-footer button:hover{
+    color: white;
+  }
+  .element-footer .link-social {
+    margin-top: 10px;
+  }
+  .element-footer .link-social a{
+    color: greenyellow;
+  }
+  .element-footer .link-social a:hover{
+    color: white;
+  }
+  
+  @media only screen and (max-width: 950px) {
+    footer .all-element-footer {
+        display: block;
+        text-align: center;
+    }
+    footer .all-element-footer .element-footer-info {
+        width: 100%;
+        padding:10px auto;
+    }
+    footer .all-element-footer .element-footer-info .logo{
+        margin: 0 auto;
+    }
+    .element-footer {
+        max-width: 100%;
+        margin-bottom: 30px;
+      
+    }
+    .footer-container-form {
+        width: 28%;
+        margin: 0 auto;
+       
+    }
+    .element-footer h5 {
+        font-size: 30px;
+    }
+    .element-footer a{
+        font-size: 20px;
+    }
+    .link-social {
+        margin-bottom: 40px;
+    }
+  }
+  /* end */

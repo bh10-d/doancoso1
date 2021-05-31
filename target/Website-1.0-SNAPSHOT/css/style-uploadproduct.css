@@ -1,0 +1,17 @@
+.avatar{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.dropdown-menu a:hover{
+    background-color: gray !important;
+}
+
+.uploadbd{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-h{
+    background-color: #8CC63F;
+}

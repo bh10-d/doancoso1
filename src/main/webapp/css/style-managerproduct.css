@@ -1,0 +1,21 @@
+.mp{
+    border-radius: 5px;
+    box-shadow: 5px 7px 20px gray;
+    margin-bottom: 10px;
+}
+.mp img{
+    width: 100px;
+    border-radius: 5px;
+}
+.e-mp{
+    display: flex;
+}
+
+.detail{
+    width: 200px;
+    height: 80px;
+    overflow: auto;
+}
+.active{
+    background-color: #8CC63F !important;
+}

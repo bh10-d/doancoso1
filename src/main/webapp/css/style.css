@@ -1,0 +1,638 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Lobster+Two:ital@1&display=swap');
+
+body,*,html {
+    margin: 0;
+    padding: 0;
+
+}
+/* css phan header trang web */
+header {
+    width: 100%;
+}
+
+header .header {
+    width: 100%;
+    height: 80px;
+    background-color: #252932;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    z-index: 999;
+    font-size: 18px;
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
+header .header .logo {
+    width: 150px;
+}
+header .header .logo img{
+    width: 100%;
+    height: auto;
+}
+
+header .header .navbar-search {
+    box-sizing: border-box;
+    padding: 0;
+    width: 50%;
+    height: 40px;
+    
+    
+}
+header .header .navbar-search input[type=text]{
+    width: 80%;
+    height: 40px;
+    float:left;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    padding:15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header .header .navbar-search button[type=submit]{
+    width: 20%;
+    padding: 5px;
+    height:40px;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    float: left;
+    font-size: 15px;
+    border: none;
+    background-color: greenyellow;
+    border-radius: 0 5px 5px 0;
+}
+
+/*animation form login and register*/
+/*cai nay t da viet 1 css de danh rieng cho phan nay roi --by hieu*/
+/*end animation form login and register*/ 
+
+
+@media only screen and (max-width: 970px) {
+    
+    header .header .navbar-search{
+        display: none;
+    }
+    header .header .logo {
+        width: 150px;
+        margin: 10px auto;
+    }
+    .SignIn-LogIn {
+        display: none;
+    }
+    
+}
+
+/* navbar */
+nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+nav .navbar {
+    
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    background-color: greenyellow;
+
+}
+
+nav .navbar .nav-sign {
+    display: none;
+}
+nav .navbar .bars-reponsive{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    z-index: 999;
+}
+nav .navbar .bars-reponsive a.closebtn{
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    text-decoration: none;
+    color: greenyellow;
+}
+nav .navbar .bars-reponsive a.closebtn:hover{
+    color: white;
+}
+nav .navbar .bars-reponsive .bars-reponsive-content{
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+
+}
+nav .navbar .bars-reponsive .bars-reponsive-content a{
+    display: block;
+    padding: 8px;
+    font-size: 30px;
+    text-decoration: none;
+    color: greenyellow;
+
+}
+nav .navbar .bars-reponsive .bars-reponsive-content a:hover{
+    color: white;
+}
+/* css cua nut search */
+nav .navbar .search-sign {
+    display: none;
+}
+.navbar .search-responsive {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    z-index: 999;
+}
+.navbar .search-responsive a.closebtn{
+    font-size: 50px;
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    text-decoration: none;
+    color: greenyellow;
+}
+.navbar .search-responsive .search-responsive-content{
+    position: relative;
+    top: 45%;
+    background-color: red;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+}
+.navbar .search-responsive .search-responsive-content input[type=text]{
+    float: left;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+}
+.navbar .search-responsive .search-responsive-content button[type=submit]{
+    float: left;
+    width: 15%;
+    height: 44px;
+    padding:3px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    background-color: greenyellow;
+}
+
+
+
+.SignIn-LogIn-nav {
+    display: none
+}
+nav .navbar .navbar-link {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+nav .navbar .navbar-link a {
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+
+header .header .navbar-search form{
+    width: 100%;
+    padding: 0 100px;   
+}
+/* navbar responsive */
+@media only screen and (max-width: 970px) {
+    
+    nav .navbar {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    nav .navbar .navbar-link {
+        display: none;
+        
+    }
+    
+    nav .navbar .nav-sign {
+        display: inline-block;
+        z-index: 99;
+    }
+    nav .navbar .nav-sign button{
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .nav-sign button:active{
+        color: white;
+    }
+    nav .navbar .search-sign {
+        display: inline-block;
+        z-index: 99;
+        
+    }
+    nav .navbar .search-sign button{
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .search-sign button:active{
+        color: white;
+    }
+    nav .navbar .SignIn-LogIn-nav{
+        display: inline-block;
+        z-index: 99; 
+    }
+    nav .navbar .SignIn-LogIn-nav button {
+        background-color: greenyellow;
+        border: none;
+        outline: none;
+        font-size: 30px;
+    }
+    nav .navbar .SignIn-LogIn-nav button:active{
+        color:aliceblue;
+    }
+}
+/* background chinh cua trang web */
+.background {
+    background-image: url("../Image/background_last.jpg");/*bo sung the the style ben html chay trong moi truong hop*/
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+}
+.background h1{
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 3em;
+    color: whitesmoke;
+}
+.background a{
+    position: absolute;
+    top: 60%; 
+    left: 45%;
+    /* text-align: center; */
+}
+#custom-a {
+    border-radius: 5px;
+    padding: 15px 55px;
+    font-size: 2em;
+    
+}
+@media only screen and (max-width:1295px){
+    .background h1{
+        position: absolute;
+        top: 40%;
+        left: 13%;
+        font-size: 2.5em;
+        color: whitesmoke;
+    }
+    .background a{
+        position: absolute;
+        top: 60%; 
+        left: 40%;
+    }
+    #custom-a {
+        border-radius: 5px;
+        padding: 10px 45px;
+        font-size: 1.6em;
+        
+    }
+
+}
+@media only screen and (max-width:1075px){
+    .background h1{
+        position: absolute;
+        top: 40%;
+        left: 3%;
+        font-size: 2.1em;
+        color: whitesmoke;
+    }
+    .background a{
+        position: absolute;
+        top: 56%; 
+        left: 3%;
+    }
+    #custom-a {
+        border-radius: 5px;
+        padding: 10px 45px;
+        font-size: 1.6em;
+        
+    }
+}
+
+/* slide sau background */
+.section2 {
+    width: 80%;
+    position: relative;
+    top: -50px;
+    margin: 0  auto;
+    
+}
+.section2 a{
+    color: black;
+    text-decoration: none;
+}
+.section2 a:hover {
+    color:green;
+}
+.mySlideProduct {
+    max-width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.box:hover{
+    background-color: gainsboro;
+}
+
+.glide__arrows button.normal{
+    color: black;
+    display: none;
+}
+.mySlideProduct:hover .glide__arrows .normal{
+    display: inline-block;
+}
+/* css cua quang cao  */
+section.ahuhuhu {
+    width: 80%;
+    margin: 20px auto;
+}
+.div2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px auto;
+}
+.imageElement {
+    width: 48%;
+    
+}
+.imageElement img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.imageElement img:hover{
+    transform: scale(1.02);
+}
+@media only screen and (max-width: 700px) {
+    .div2 {
+        display: block;
+    }
+    .imageElement {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* css slide sản phẩm bán chạy */
+.div3 {
+    width: 80%;
+    text-align: center;
+    margin: 50px auto;
+}
+.div3 .item-slide {
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+.div3 a{
+    text-decoration: none;
+    color: black;
+}
+.div3 a:hover{
+    color: green;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    font-size: 25px;
+    margin:0 30px;
+    max-width: 250px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item-slide:hover .glide__arrows .normal{
+    display: inline-block;
+}
+/*reponse cua san pham ban chay */
+@media only screen and (max-width: 1166px) {
+    
+}
+/* css cua tin tuc */
+article.section3{
+    
+    width: 80%;
+    /* height: 200px; */
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.div4 h2{
+    text-align: center;
+    margin: 20px 0 25px;
+}
+
+.all-article{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.all-article a{
+    max-width: 30%;
+    color: black;
+    text-decoration: none;
+    
+}
+.all-article a .article-element {
+    padding: 10px 25px;
+
+}
+.all-article a .article-element:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.all-article a .article-element img{
+    margin-bottom: 13px;
+}
+
+.article-element img{
+    max-width: 100%;
+    height: auto;
+    
+}
+/*responsive cua tin tuc */
+@media only screen and (max-width: 950px) {
+	.all-article{
+    	max-width: 100%;
+    	display:block;
+        
+	}
+	.all-article a{
+    	width: 100%;
+    	color: black;
+    	text-decoration: none;
+	}
+	.all-article a .article-element{
+		width: 100%;
+        text-align: center;
+	}
+    .all-article a .article-element img{
+        margin: 0 auto;
+    }
+}
+
+
+/* css cua footer */
+footer {
+    background-color: #252932;
+    position: relative;
+    top: 100px;
+    color: white;
+
+}
+footer .all-element-footer{
+    width: 100%;
+    
+}
+
+footer .all-element-footer .element-footer-info i{
+    margin-right:10px;
+}
+footer h2{
+    text-align: center;
+    
+    padding: 20px 0 30px;
+    height: 100px;
+}
+footer .element-footer-info .logo {
+    width: 150px;
+    
+}
+footer .element-footer-info .logo img{
+    width: 100%;
+    height: auto;
+}
+footer .all-element-footer{
+    display: flex;
+    justify-content: space-around;
+}
+footer .all-element-footer .element-footer-info{
+    position: relative;
+    top: -50px;
+    width: 30%;
+}
+.element-footer {
+    max-width: 18%;
+    display: flex;
+    flex-direction: column;
+
+}
+.element-footer a{
+    color:#A4A4A4;
+}
+.element-footer input {
+    float: left;
+    outline: none;
+    padding-left: 5px;
+}
+
+.element-footer button{
+    float: left;
+    background-color: #252932;
+    color: greenyellow;
+    margin-left: 7px;
+    border: none;
+    outline: none;
+}
+.element-footer button:hover{
+    color: white;
+}
+.element-footer .link-social {
+    margin-top: 10px;
+}
+.element-footer .link-social a{
+    color: greenyellow;
+}
+.element-footer .link-social a:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 950px) {
+    footer .all-element-footer {
+        display: block;
+        text-align: center;
+    }
+    footer .all-element-footer .element-footer-info {
+        width: 100%;
+        padding:10px auto;
+    }
+    footer .all-element-footer .element-footer-info .logo{
+        margin: 0 auto;
+    }
+    .element-footer {
+        max-width: 100%;
+        margin-bottom: 30px;
+      
+    }
+    .footer-container-form {
+        width: 28%;
+        margin: 0 auto;
+       
+    }
+    .element-footer h5 {
+        font-size: 30px;
+    }
+    .element-footer a{
+        font-size: 20px;
+    }
+    .link-social {
+        margin-bottom: 40px;
+    }
+}

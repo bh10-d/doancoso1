@@ -4,6 +4,7 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
             <h2>Quản lý tài khoản</h2>
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a href="Userpage" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
+                    <a href="Infouser" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
                 </li>
                 <li class="nav-item">
                     <a href="Uploadproduct" class="nav-link">Đăng bán sản phẩm</a>
@@ -98,6 +99,10 @@
                                     <p name="typep">${productt.type}</p>
                                 </div>
                                 <div class="text-center mt-3 ml-3">
+                                    <h6>Giá</h6>
+                                    <p name="pricep">${productt.price}</p>
+                                </div>
+                                <div class="text-center mt-3 ml-3">
                                     <h6>Mô tả</h6>
                                     <div class="detail text-left">
                                         <p name="detailp">${productt.description}</p>
@@ -107,7 +112,7 @@
 <%--                                    <button type="button" class="btn btn-success mt-5 ml-3" data-toggle="modal" data-target="#myModal">--%>
 <%--                                        Chỉnh sửa--%>
 <%--                                    </button>--%>
-                                    <a href="EEProduct?idp=${productt.idproduct}"  type="button" class="btn btn-success mt-5 ml-3">Chỉnh sửa</a>
+                                    <a href="EEProduct?idp=${productt.idproduct}"  type="button" class="btn btn-success mt-5 ml-2">Chỉnh sửa</a>
 <%--                                    <div class="modal" id="myModal">--%>
 
 <%--                                        <div class="modal-dialog modal-dialog-centered">--%>
@@ -155,7 +160,7 @@
 <%--                                            </div>--%>
 <%--                                        </div>--%>
 <%--                                    </div>--%>
-                                    <a href="DProduct?idp=${productt.idproduct}" type="button" class="btn btn-danger mt-5">Xoá</a>
+                                    <a href="DProduct?idp=${productt.idproduct}" type="button" class="btn btn-danger mt-1 ml-4">Xoá</a>
 <%--                                    <button type="button" class="btn btn-danger mt-5">Xoá</button>--%>
                                 </div>
                             </div>

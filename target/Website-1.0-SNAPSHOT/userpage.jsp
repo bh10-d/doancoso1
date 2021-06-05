@@ -1,4 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -12,6 +12,7 @@
 <html lang="en">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -36,7 +37,7 @@
             <h2>Quản lý tài khoản</h2>
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a href="Userpage" class="nav-link bg-h">Chỉnh sửa thông tin cá nhân</a>
+                    <a href="Infouser" class="nav-link bg-h">Chỉnh sửa thông tin cá nhân</a>
                 </li>
                 <li class="nav-item">
                     <a href="Uploadproduct" class="nav-link">Đăng bán sản phẩm</a>
@@ -48,12 +49,12 @@
         </div>
         <div class="col-xl-8 col-lg-8 col-sm-12">
             <h2>Chỉnh sửa thông tin cá nhân</h2>
-            <form action="#" class="needs-validation" novalidate>
+            <form action="Infouserd" method="post" class="needs-validation" novalidate acceptcharset="UTF-8">
                 <div class="form-group">
                     <div class="form-row">
                         <div class="col-md-6">
                             <div class="form-label-group">
-                                <input class="form-control" type="text" name="firstname" id="firstname"
+                                <input class="form-control" type="text" name="firstname" value="${requestScope.firstname}" id="firstname"
                                        placeholder="Nhập họ" required>
                                 <label for="firstname">Họ</label>
                                 <div class="valid-feedback">Có hiệu lực</div>
@@ -62,7 +63,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="form-label-group">
-                                <input class="form-control" type="text" name="lastname" id="lastname"
+                                <input class="form-control" type="text" name="lastname" value="${requestScope.lastname}" id="lastname"
                                        placeholder="Nhập tên" required>
                                 <label for="lastname">Tên</label>
                                 <div class="valid-feedback">Có hiệu lực</div>
@@ -73,7 +74,7 @@
                 </div>
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input class="form-control" type="text" name="dob" id="DoB" placeholder="Ngày sinh"
+                        <input class="form-control" type="text" name="dob" value="${requestScope.dob}" id="DoB" placeholder="Ngày sinh"
                                required>
                         <label for="DoB">Ngày sinh</label>
                         <div class="valid-feedback">Có hiệu lực</div>
@@ -82,7 +83,7 @@
                 </div>
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input class="form-control" type="text" name="address" id="address" placeholder="Địa chỉ"
+                        <input class="form-control" type="text" name="address" value="${requestScope.address}" id="address" placeholder="Địa chỉ"
                                required>
                         <label for="address">Địa chỉ</label>
                         <div class="valid-feedback">Có hiệu lực</div>
@@ -90,13 +91,23 @@
                     </div>
                 </div>
 
-                <div>
-                    <p><c:out value="${sessionScope.email}"/></p>
+<%--                <div>--%>
+<%--                    <p><c:out value="${sessionScope.email}"/></p>--%>
+<%--                </div>--%>
+
+                <div class="form-group">
+                    <div class="form-label-group">
+                        <input class="form-control" type="text" name="email" value="${requestScope.email}" id="email" placeholder="Email"
+                               required>
+                        <label for="email">Email</label>
+                        <div class="valid-feedback">Có hiệu lực</div>
+                        <div class="invalid-feedback">Vui lòng điền vào trường này</div>
+                    </div>
                 </div>
 
                 <div class="form-group">
                     <div class="form-label-group">
-                        <input class="form-control" type="text" name="number" id="number" placeholder="Số điện thoại" required>
+                        <input class="form-control" type="text" name="number" value="${requestScope.number}" id="number" placeholder="Số điện thoại" required>
                         <label for="number">Số điện thoại</label>
                         <div class="valid-feedback">Có hiệu lực</div>
                         <div class="invalid-feedback">Vui lòng điền vào trường này</div>

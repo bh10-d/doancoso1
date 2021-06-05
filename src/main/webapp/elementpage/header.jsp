@@ -34,7 +34,7 @@
                     <img class="avatar" src="Image/account-avatar.jpg"><c:out value="${account}"/>
                 </button>
                 <div class="dropdown-menu bg-dark">
-                    <a class="dropdown-item text-white" href="userpage.jsp">Chỉnh sửa thông tin cá nhân</a>
+                    <a class="dropdown-item text-white" href="Infouser">Chỉnh sửa thông tin cá nhân</a>
                     <a class="dropdown-item text-white" href="uploadproduct.jsp">Đăng bán sản phẩm</a>
                     <a class="dropdown-item text-white" href="ManaControl">Quản lý bài đăng</a>
                     <a class="dropdown-item text-white" href="LogoutControl"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>

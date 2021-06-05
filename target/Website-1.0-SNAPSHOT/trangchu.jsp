@@ -21,7 +21,7 @@
     <!-- add carousel glider -->
     <script src="js/glide.min.js"></script>
     <link rel="stylesheet" href="css/glide.core.min.css">
-    <link rel="stylesheet" href="ccs/glide.theme.min.css">
+    <link rel="stylesheet" href="css/glide.theme.min.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -117,7 +117,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/traicay.jpg" alt="">
+                            <img src="Image/traicay.jpg" alt="">
                             <p class="nameProduct">trái cây</p>
                         </div>
                     </a>
@@ -128,7 +128,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/do_kho.jpg" alt="">
+                            <img src="Image/do_kho.jpg" alt="">
                             <p class="nameProduct">đậu</p>
                         </div>
                     </a>
@@ -138,7 +138,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/do_uong.jpg" alt="">
+                            <img src="Image/do_uong.jpg" alt="">
                             <p class="nameProduct">đồ uống</p>
                         </div>
                     </a>
@@ -148,7 +148,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/haisan.png" alt="">
+                            <img src="Image/haisan.png" alt="">
                             <p class="nameProduct">hải sản</p>
                         </div>
                     </a>
@@ -158,7 +158,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/rau_cu.jpg" alt="">
+                            <img src="Image/rau_cu.jpg" alt="">
                             <p class="nameProduct">rau củ</p>
                         </div>
                     </a>
@@ -168,7 +168,7 @@
                 <li class="glide__slide">
                     <a href="RauCu.html">
                         <div class="box">
-                            <img src="image/thit_trung.jpg" alt="">
+                            <img src="Image/thit_trung.jpg" alt="">
                             <p class="nameProduct">lương thực</p>
                         </div>
                     </a>
@@ -342,7 +342,7 @@
 
 <jsp:include page="elementpage/footer.jsp"/>
 
-<script src="javascript.js"></script>
+<script src="js/javascript.js"></script>
 <script>
     new Glide(".mySlideProduct", {
         type: 'carousel',

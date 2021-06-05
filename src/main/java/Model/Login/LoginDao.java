@@ -16,7 +16,7 @@ public class LoginDao {
             ps.setString(2,password);
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
-                Account account = new Account(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4), rs.getString(5));
+                Account account = new Account(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getInt(4), rs.getString(5),rs.getString(7));
                 return account;
             }
 

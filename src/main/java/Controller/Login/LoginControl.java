@@ -20,7 +20,7 @@ public class LoginControl extends HttpServlet {
             Account account = loginDao.checkLogin(username,password);
             HttpSession session = request.getSession();
             if(account == null){
-                request.getRequestDispatcher("trangchu.jsp").forward(request,response);
+                response.sendRedirect("trangchu.jsp");
             }else if (account != null/*account.getUsername().equals("admin")&&account.getPassword().equals("admin")*/   /*account.getAkou() == 0*/){
                 response.sendRedirect("trangchu.jsp");
             }
@@ -30,14 +30,6 @@ public class LoginControl extends HttpServlet {
 
             session.setAttribute("account",account.getUsername());
             session.setAttribute("id",account.getId());
-            // t bắt id từ lúc đăng nhập thành công
-            // sao m ko thêm nguyên cái account mà thêm cái id làm chi :v
-            // t suy nghĩ nông cạn quá :v thêm nguyên cái account sau này cần gì lôi ra khỏe chữ mỗi id ko thì hơi chan ;v
-            // ok ok
-        // giờ giải quyết cho thêm vô dâtbase thành công đã /
-        //xong làm cái kia sau
-        //okok
-        // mà sql của m mô // coi sql cai
             session.setAttribute("username",username);
 
             session.setAttribute("password",password);
@@ -45,7 +37,7 @@ public class LoginControl extends HttpServlet {
 
 
 
-            session.setAttribute("email",account.getAddress());
+            session.setAttribute("email",account.getEmail());
 
         System.out.println(session.getAttribute("email"));
 

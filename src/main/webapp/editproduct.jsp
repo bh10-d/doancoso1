@@ -106,13 +106,13 @@
             <h2>Quản lý tài khoản</h2>
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a href="Userpage" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
+                    <a href="Infouser" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
                 </li>
                 <li class="nav-item">
-                    <a href="Uploadproduct" class="nav-link bg-h">Đăng bán sản phẩm</a>
+                    <a href="Uploadproduct" class="nav-link">Đăng bán sản phẩm</a>
                 </li>
                 <li class="nav-item">
-                    <a href="ManaControl" class="nav-link">Quản lý bài đăng</a>
+                    <a href="ManaControl" class="nav-link bg-h">Quản lý bài đăng</a>
                 </li>
             </ul>
         </div>

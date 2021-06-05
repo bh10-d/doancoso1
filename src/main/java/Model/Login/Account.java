@@ -6,6 +6,16 @@ public class Account {
     private String password;
     private int akou;
     private String address;
+    private String email;
+    private int number;
+    private String sex;
+    private String DoB;
+    private String firstname;
+    private String lastname;
+
+    public Account(){
+
+    }
 
     public Account(String username, String password){
         this.username = username;
@@ -37,6 +47,26 @@ public class Account {
         this.password = password;
         this.akou = akou;
         this.address = address;
+    }
+
+    public Account(int id, String username, String password, int akou, String address, String email) {
+        this.id = id;
+        this.username = username;
+        this.password = password;
+        this.akou = akou;
+        this.address = address;
+        this.email = email;
+    }
+
+    public Account(int id, String email, String sex, String address, int number,String dob, String firstname, String lastname) {
+        this.id = id;
+        this.email = email;
+        this.sex = sex;
+        this.address = address;
+        this.number = number;
+        this.DoB = dob;
+        this.firstname = firstname;
+        this.lastname = lastname;
     }
 
     public int getId() {
@@ -77,6 +107,54 @@ public class Account {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
+    public String getSex() {
+        return sex;
+    }
+
+    public void setSex(String sex) {
+        this.sex = sex;
+    }
+
+    public String getDoB() {
+        return DoB;
+    }
+
+    public void setDoB(String doB) {
+        DoB = doB;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     //    @Override

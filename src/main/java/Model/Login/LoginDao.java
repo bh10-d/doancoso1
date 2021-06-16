@@ -3,6 +3,8 @@ package Model.Login;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class LoginDao {
 
@@ -25,11 +27,45 @@ public class LoginDao {
         }
         return null;
     }
+    public List<Account> manageraccount(){
+
+        List<Account> list = new ArrayList<>();
+        try {
+            String query = "SELECT IDUser,AUsername,APassword FROM accounthieu WHERE IDUser>2";
+            ConnectDB connectDB = new ConnectDB();
+            PreparedStatement ps = connectDB.getCon().prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(new Account(rs.getInt(1),
+                                        rs.getString(2),
+                                        rs.getString(3)));
+            }
+            if(list!=null){
+                return list;
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+
+        return null;
+    }
 
 //    public static void main(String[] args) {
+////        LoginDao loginDao = new LoginDao();
+////        Account account = loginDao.checkLogin("bhieu","bhieu");
+////        System.out.println(account);
+////        System.out.println(account.getId());
+//
 //        LoginDao loginDao = new LoginDao();
-//        Account account = loginDao.checkLogin("bhieu","bhieu");
-//        System.out.println(account);
-//        System.out.println(account.getId());
+//        List<Account> list = loginDao.manageraccount();
+//        for (Account account: list
+//             ) {
+//            System.out.println(account.getId());
+//            System.out.println(account.getUsername());
+//            System.out.println(account.getPassword());
+//        }
+//
+//
 //    }
 }

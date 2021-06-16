@@ -24,7 +24,7 @@ public class test {
 //            ResultSet rs = stmt.executeQuery("select * from products where id = ?");
 
             while (rs.next()){
-                list.add(new MStore(rs.getString(2),rs.getInt(3),rs.getString(5),rs.getString(8)));
+                list.add(new MStore(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getString(5),rs.getString(8)));
             }
             if (list != null){
                 return list;

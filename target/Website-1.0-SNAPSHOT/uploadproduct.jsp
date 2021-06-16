@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,80 +33,15 @@
 </head>
 
 <body>
-
-<%--<header>--%>
-<%--    <div class="header">--%>
-<%--        <div class="logo">--%>
-<%--            <a href="index.jsp"><img src="Image/logo.png" alt=""></a>--%>
-<%--        </div>--%>
-<%--        <div class="navbar-search">--%>
-<%--            <form action="#">--%>
-<%--                <input type="text" name="search" placeholder="Search...">--%>
-<%--                <button type="submit"><i class="fas fa-search"></i></button>--%>
-<%--            </form>--%>
-<%--        </div>--%>
-<%--        <div class="dropdown bg-dark" style="color: rebeccapurple;">--%>
-<%--            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">--%>
-<%--                <img class="avatar" src="account-avatar.jpg">bhieu--%>
-<%--            </button>--%>
-<%--            <div class="dropdown-menu bg-dark">--%>
-<%--                <a class="dropdown-item text-white" href="userpage.jsp">Chỉnh sửa thông tin cá nhân</a>--%>
-<%--                <a class="dropdown-item text-white" href="uploadproduct.jsp">Đăng bán sản phẩm</a>--%>
-<%--                <a class="dropdown-item text-white" href="index.jsp"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--        <div class="con-registerForm">--%>
-<%--            <div class="container">--%>
-<%--            </div>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</header>--%>
-
 <jsp:include page="elementpage/header.jsp"/>
-
 <jsp:include page="elementpage/navbar.jsp"/>
-
-<!-- <div class="container" style="margin-top: 10px;">
-    <div class="row"
-         style="border: 1px darkgrey solid; border-radius: 10px; width: 50%; margin: 0 auto; padding: 20px;">
-        <div class="col-sm-12">
-
-            <h2 class="myclass">Upload Photo</h2>
-            <form action="#" method="post" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label>ID</label>
-                    <input type="text"
-                           class="form-control" name="id" placeholder="Enter id">
-                </div>
-                <div class="form-group">
-                    <label>Full Name</label>
-                    <input type="text"
-                           class="form-control" name="name" placeholder="Enter name">
-                </div>
-
-                <div class="form-group">
-                    <label>Photo</label> <br/>
-
-                    <input type="file"
-                           class="form-control" name="photo" placeholder="Enter photo">
-                </div>
-                <button type="submit" class="btn btn-primary">Save</button>
-                <button type="reset" class="btn btn-primary">Cancel</button>
-            </form>
-        </div>
-    </div>
-</div> -->
-
-
-
-
 <div class="container uploadbd">
     <div class="row">
         <div class="col-xl-4 col-lg-4 col-sm-12" style="height: 1000px; box-shadow: 5px 7px 20px black; border-radius: 5px;">
             <h2>Quản lý tài khoản</h2>
             <ul class="nav nav-pills flex-column">
                 <li class="nav-item">
-                    <a href="Userpage" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
+                    <a href="Infouser" class="nav-link">Chỉnh sửa thông tin cá nhân</a>
                 </li>
                 <li class="nav-item">
                     <a href="Uploadproduct" class="nav-link bg-h">Đăng bán sản phẩm</a>
@@ -114,6 +49,15 @@
                 <li class="nav-item">
                     <a href="ManaControl" class="nav-link">Quản lý bài đăng</a>
                 </li>
+                <li class="nav-item">
+                    <a href="ManagerOrder" class="nav-link">Quản lý đơn hàng</a>
+                </li>
+                <c:set var="sessionaccount" value="${sessionScope.akou}"/>
+                <c:if test="${sessionaccount == 0}">
+                    <li class="nav-item">
+                        <a href="ManagerAccount" class="nav-link">Tài khoản đã đăng kí vào hệ thống</a>
+                    </li>
+                </c:if>
             </ul>
         </div>
         <div class="col-xl-8 col-lg-8 col-sm-12">
@@ -149,32 +93,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <jsp:include page="elementpage/footer.jsp"/>
 <script src="js/javascript.js"></script>
 </body>

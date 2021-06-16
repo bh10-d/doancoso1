@@ -6,6 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<link rel="stylesheet" href="css/style-raucu.css">
 <nav>
     <div class="navbar">
         <div class="nav-sign">
@@ -16,19 +17,43 @@
         <div id="myNav" class="bars-reponsive">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="bars-reponsive-content">
-                <a href="Index">TRANG CHỦ</a>
+                <a href="Trangchu">TRANG CHỦ</a>
                 <a href="gioithieu.jsp">GIỚI THIỆU</a>
                 <a href="StoreControl">CỬA HÀNG</a>
                 <a href="blog.jsp">TIN TỨC</a>
                 <a href="lienhe.jsp">LIÊN HỆ</a>
             </div>
         </div>
+<%--        <div class="navbar-link">--%>
+<%--            <a href="Trangchu">TRANG CHỦ</a>--%>
+<%--            <a href="Gioithieu">GIỚI THIỆU</a>--%>
+<%--            <a href="StoreControl">CỬA HÀNG</a>--%>
+<%--            <a href="blog.jsp">TIN TỨC</a>--%>
+<%--            <a href="lienhe.jsp">LIÊN HỆ</a>--%>
+<%--        </div>--%>
         <div class="navbar-link">
-            <a href="Index">TRANG CHỦ</a>
-            <a href="gioithieu.jsp">GIỚI THIỆU</a>
-            <a href="StoreControl">CỬA HÀNG</a>
-            <a href="blog.jsp">TIN TỨC</a>
-            <a href="lienhe.jsp">LIÊN HỆ</a>
+            <div class="head-link"><a href="Trangchu">TRANG CHỦ</a></div>
+            <div class="head-link"><a href="Gioithieu">GIỚI THIỆU</a></div>
+
+            <!-- chổ ni xổ xuống -->
+            <div class="dropdown">
+                <div class="head-link"><a href="StoreControl">CỬA HÀNG</a></div>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="StoreControl">Rau Củ</a></li>
+                        <li><a href="HaiSan.jsp">Hải Sản</a></li>
+                        <li><a href="TraiCay.jsp">Trái Cây</a></li>
+                        <li><a href="DoUong.jsp">Đồ Uống</a></li>
+                        <li><a href="DoKho.jsp">Đồ Khô</a></li>
+                        <li><a href="ThitTrung.jsp">Thịt Trứng</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- <a href="RauCu.html">CỬA HÀNG</a> -->
+            <div class="head-link"><a href="blog.jsp">TIN TỨC</a></div>
+            <div class="head-link"><a href="lienhe.jsp">LIÊN HỆ</a></div>
         </div>
         <div class="search-sign">
             <button type="button" onclick="openSearch()">

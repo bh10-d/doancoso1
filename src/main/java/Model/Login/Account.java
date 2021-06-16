@@ -58,8 +58,9 @@ public class Account {
         this.email = email;
     }
 
-    public Account(int id, String email, String sex, String address, int number,String dob, String firstname, String lastname) {
+    public Account(int id,int akou, String email, String sex, String address, int number,String dob, String firstname, String lastname) {
         this.id = id;
+        this.akou = akou;
         this.email = email;
         this.sex = sex;
         this.address = address;

@@ -40,6 +40,7 @@ public class InUser {
             Account account = null;
             while(rs.next()){
                 return account = new Account(rs.getInt(1),
+                        rs.getInt(4),
                         rs.getString(5),
                         rs.getString(6),
                         rs.getString(7),

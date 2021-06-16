@@ -7,19 +7,34 @@ public class MStore {
     private String imgurl;
     private int price;
     private String description;
+    private String idoc;
 
     public MStore() {
     }
-
-    public MStore(int idproduct,String name, int price, String description, String imgurl) {
+    public MStore(String type){
+        this.type = type;
+    }
+    public MStore(int idproduct,String name, int price, String description, String idoc, String imgurl) {
         this.idproduct = idproduct;
         this.name = name;
         this.price = price;
         this.description = description;
+        this.idoc = idoc;
         this.imgurl = imgurl;
     }
 
-    public MStore(String name, int price, String description, String imgurl) {
+    public MStore(int idproduct,String name, int price, String description, String idoc, String imgurl,String type) {
+        this.idproduct = idproduct;
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.idoc = idoc;
+        this.imgurl = imgurl;
+        this.type = type;
+    }
+
+    public MStore(int idproduct,String name, int price, String description, String imgurl) {
+        this.idproduct = idproduct;
         this.name = name;
         this.price = price;
         this.description = description;
@@ -34,6 +49,8 @@ public class MStore {
         this.price = price;
         this.description = description;
     }
+
+
 
     public int getIdproduct() {
         return idproduct;
@@ -83,8 +100,15 @@ public class MStore {
         this.description = description;
     }
 
+    public String getIdoc() {
+        return idoc;
+    }
 
-//    @Override
+    public void setIdoc(String idoc) {
+        this.idoc = idoc;
+    }
+
+    //    @Override
 //    public String toString() {
 //        return "MStore{" +
 //                "name='" + name + '\'' +

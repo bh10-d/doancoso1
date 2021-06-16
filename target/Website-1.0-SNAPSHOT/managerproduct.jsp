@@ -1,3 +1,4 @@
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
@@ -45,42 +46,18 @@
                 <li class="nav-item">
                     <a href="ManaControl" class="nav-link bg-h">Quản lý bài đăng</a>
                 </li>
+                <li class="nav-item">
+                    <a href="ManagerOrder" class="nav-link">Quản lý đơn hàng</a>
+                </li>
+                <c:set var="sessionaccount" value="${sessionScope.akou}"/>
+                <c:if test="${sessionaccount == 0}">
+                    <li class="nav-item">
+                        <a href="ManagerAccount" class="nav-link">Tài khoản đã đăng kí vào hệ thống</a>
+                    </li>
+                </c:if>
             </ul>
         </div>
         <div class="col-xl-8 col-lg-8 col-sm-12">
-
-
-
-<%--            <form action="" method="post">--%>
-<%--                <div class="mp">--%>
-<%--                    <div class="e-mp">--%>
-<%--                        <img src="Image/chuoi.jpg" alt="">--%>
-<%--                        <div class="text-center mt-3">--%>
-<%--                            <h6>Tên sản phẩm</h6>--%>
-<%--                            <p name="namep">Chuối</p>--%>
-<%--                        </div>--%>
-<%--                        <div class="text-center mt-3 ml-3">--%>
-<%--                            <h6>Loại sản phẩm</h6>--%>
-<%--                            <p name="typep">Trái cây</p>--%>
-<%--                        </div>--%>
-<%--                        <div class="text-center mt-3 ml-3">--%>
-<%--                            <h6>Mô tả</h6>--%>
-<%--                            <div class="detail text-left">--%>
-<%--                                <p name="detailp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam consequuntur officia quae quas maiores perferendis molestias dolor suscipit excepturi deserunt neque perspiciatis, voluptatibus porro qui illo accusantium officiis pariatur eligendi.</p>--%>
-<%--                            </div>--%>
-<%--                        </div>--%>
-<%--                        <div>--%>
-<%--                            <button type="button" class="btn btn-success mt-5 ml-3" data-toggle="modal" data-target="#myModal">--%>
-<%--                                Chỉnh sửa--%>
-<%--                            </button>--%>
-<%--                            &lt;%&ndash;form re edit product&ndash;%&gt;--%>
-<%--&lt;%&ndash;                            <jsp:include page="elementpage/formreditproduct.jsp"/>&ndash;%&gt;--%>
-
-<%--                            <button type="button" class="btn btn-danger mt-5">Xoá</button>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                </div>--%>
-<%--            </form>--%>
 
 
             <%--test--%>
@@ -94,6 +71,7 @@
                                     <h6>Tên sản phẩm</h6>
                                     <p name="namep">${productt.name}</p>
                                 </div>
+
                                 <div class="text-center mt-3 ml-3">
                                     <h6>Loại sản phẩm</h6>
                                     <p name="typep">${productt.type}</p>
@@ -160,7 +138,7 @@
 <%--                                            </div>--%>
 <%--                                        </div>--%>
 <%--                                    </div>--%>
-                                    <a href="DProduct?idp=${productt.idproduct}" type="button" class="btn btn-danger mt-1 ml-4">Xoá</a>
+                                    <a href="DProduct?idp=${productt.idproduct}" type="button" class="btn btn-danger mt-5 ">Xoá</a>
 <%--                                    <button type="button" class="btn btn-danger mt-5">Xoá</button>--%>
                                 </div>
                             </div>

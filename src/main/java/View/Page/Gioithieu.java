@@ -9,7 +9,7 @@ import java.io.IOException;
 public class Gioithieu extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        response.sendRedirect("gioithieu.jsp");
+        request.getRequestDispatcher("gioithieu.jsp").forward(request,response);
     }
 
     @Override

@@ -18,7 +18,7 @@ public class Uplproduct {
             ps.setString(1,"3");
             ResultSet rs = ps.executeQuery();
             while (rs.next()){
-                return new MStore(rs.getString(2),rs.getInt(3),rs.getString(5),rs.getString(8));
+                return new MStore(rs.getInt(1),rs.getString(2),rs.getInt(3),rs.getString(5),rs.getString(8));
             }
 
         } catch (SQLException throwables) {

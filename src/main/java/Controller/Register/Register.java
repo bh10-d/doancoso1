@@ -1,15 +1,11 @@
 package Controller.Register;
 
-import Model.Regis;
+import Model.Page.Regis;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
-import java.io.PrintWriter;
-import java.net.URLDecoder;
-import java.nio.file.Files;
-import java.nio.file.Path;
 
 @MultipartConfig
 @WebServlet(name = "Register", value = "/Register")

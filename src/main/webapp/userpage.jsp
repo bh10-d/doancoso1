@@ -45,6 +45,15 @@
                 <li class="nav-item">
                     <a href="ManaControl" class="nav-link">Quản lý bài đăng</a>
                 </li>
+                <li class="nav-item">
+                    <a href="ManagerOrder" class="nav-link">Quản lý đơn hàng</a>
+                </li>
+                <c:set var="sessionaccount" value="${sessionScope.akou}"/>
+                <c:if test="${sessionaccount == 0}">
+                    <li class="nav-item">
+                        <a href="ManagerAccount" class="nav-link">Tài khoản đã đăng kí vào hệ thống</a>
+                    </li>
+                </c:if>
             </ul>
         </div>
         <div class="col-xl-8 col-lg-8 col-sm-12">

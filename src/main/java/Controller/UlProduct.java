@@ -30,7 +30,7 @@ public class UlProduct extends HttpServlet {
             String detailp = request.getParameter("detailp").toString();
             String realPath = request.getServletContext().getRealPath("/Image");
             String filename = Path.of(part.getSubmittedFileName()).getFileName().toString();
-            if (!Files.exists(Path.of(realPath))){
+            if (Files.exists(Path.of(realPath))){
                 Files.createDirectories(Path.of(realPath));
             }
             part.write(realPath+"/"+filename);

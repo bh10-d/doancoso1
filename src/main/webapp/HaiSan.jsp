@@ -33,7 +33,7 @@
     <script src="js/vadi-login-signup.js"></script>
     <!-- <link rel="stylesheet" href="glide.theme.min.css"> -->
     <!--End.....-->
-
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
 
 
 </head>

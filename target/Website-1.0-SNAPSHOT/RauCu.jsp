@@ -17,17 +17,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/style-raucu.css">
-
-    <!-- link bootstrap for Login Logout -->
-<%--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"--%>
-<%--    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"--%>
-<%--    crossorigin="anonymous"></script>--%>
-<%--    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"--%>
-<%--            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"--%>
-<%--            crossorigin="anonymous"></script>--%>
-<%--    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"--%>
-<%--            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"--%>
-<%--            crossorigin="anonymous"></script>--%>
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -46,6 +35,7 @@
     <script src="js/vadi-login-signup.js"></script>
     <!-- <link rel="stylesheet" href="glide.theme.min.css"> -->
     <!--End.....-->
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
 </head>
 
 <body>
@@ -235,154 +225,6 @@
             </div>
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
                 <div class="row product-all">
-<%--                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/bapcai.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Bắp cải</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>65,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/Buoi.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Bưởi</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>75,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/cachua.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Cà chua</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>75,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/caiboxoi.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Cải bó xôi</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>29,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/cam-xoan-4.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Cam xoàn hướng</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>65,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/chanh_ko_hat.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Chanh</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>85,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/chuoi.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Chuối</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>35,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/nho_mi.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Nho</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>145,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/otchuong.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Ớt chuông</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>55,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;" src="Image/saurieng.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Sầu riêng</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>135,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-
-<%--                    <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">--%>
-<%--                        <div class="form-3">--%>
-<%--                            <a href="">--%>
-<%--                                <img style="width: 200px;height: 200px;"--%>
-<%--                                     src="Image/anh-dai-dien-thanh-long-trăng.jpg" alt="">--%>
-<%--                                <div class="BG-1">--%>
-<%--                                    <span style="display:block;" class="name-label">Thanh long</span>--%>
-<%--                                    <span class="price"><span>Giá:&nbsp;</span>45,000&nbsp;<span>₫</span></span>--%>
-<%--                                </div>--%>
-<%--                                <button type="button" name="" id=""--%>
-<%--                                        class="btn btn-primary btn-lg center-post Mua">Mua Ngay</button>--%>
-<%--                            </a>--%>
-<%--                        </div>--%>
-<%--                    </div>--%>
-
-                    <%--test--%>
-
                     <c:forEach items="${requestScope.productlist}" var="product">
                         <div class="col-xs-3 col-sm-6 col-md-6 col-lg-3">
                             <div class="form-3">
@@ -400,14 +242,7 @@
                             </div>
                         </div>
                     </c:forEach>
-
-
-
-
 <%--                    <jsp:include page="elementpage/product.jsp"/>--%>
-
-                    <%--test--%>
-
                 </div>
             </div>
         </div>

@@ -23,7 +23,8 @@
     <script src="js/vadi-login-signup.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <title>Liên hệ - Trái Cây Cao Cấp</title>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
+    <title>Liên hệ</title>
 
 </head>
 

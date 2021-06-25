@@ -14,6 +14,9 @@
                 <i class="fa fa-bars"></i>
             </button>
         </div>
+        <div class="imgrespon">
+            <a href="Trangchu"><img class="" src="Image/logonongsanvnv2.png" alt=""></a>
+        </div>
         <div id="myNav" class="bars-reponsive">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="bars-reponsive-content">
@@ -33,19 +36,19 @@
 <%--        </div>--%>
         <div class="navbar-link">
             <div class="head-link"><a href="Trangchu">TRANG CHỦ</a></div>
-            <div class="head-link"><a href="Gioithieu">GIỚI THIỆU</a></div>
+            <div class="head-link"><a href="gioithieu.jsp">GIỚI THIỆU</a></div>
 
             <!-- chổ ni xổ xuống -->
             <div class="dropdown">
                 <div class="head-link"><a href="StoreControl">CỬA HÀNG</a></div>
                 <div class="dropdown-content">
                     <ul>
-                        <li><a href="StoreControl">Rau Củ</a></li>
-                        <li><a href="HaiSan.jsp">Hải Sản</a></li>
-                        <li><a href="TraiCay.jsp">Trái Cây</a></li>
-                        <li><a href="DoUong.jsp">Đồ Uống</a></li>
-                        <li><a href="DoKho.jsp">Đồ Khô</a></li>
-                        <li><a href="ThitTrung.jsp">Thịt Trứng</a></li>
+                        <li><a href="StoreControl">RAU CỦ</a></li>
+                        <li><a href="HaiSan.jsp">HẢI SẢN</a></li>
+                        <li><a href="TraiCay.jsp">TRÁI CÂY</a></li>
+                        <li><a href="DoUong.jsp">ĐỒ UỐNG</a></li>
+                        <li><a href="DoKho.jsp">ĐỒ KHÔ</a></li>
+                        <li><a href="ThitTrung.jsp">THỊT TRỨNG</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,10 +72,10 @@
                 </form>
             </div>
         </div>
-        <div class="SignIn-LogIn-nav">
-            <button type="button">
-                <i class="fas fa-sign-in-alt"></i>
-            </button>
-        </div>
+<%--        <div class="SignIn-LogIn-nav">--%>
+<%--            <button type="button">--%>
+<%--                <i class="fas fa-sign-in-alt"></i>--%>
+<%--            </button>--%>
+<%--        </div>--%>
     </div>
 </nav>

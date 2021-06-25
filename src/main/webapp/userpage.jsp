@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style-userpage.css">
     <link rel="stylesheet" href="css/style-uploadproduct.css">
     <link rel="stylesheet" href="css/style-blog.css">
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
     <title>Welcome Admin</title>
 </head>
 
@@ -122,34 +123,34 @@
                         <div class="invalid-feedback">Vui lòng điền vào trường này</div>
                     </div>
                 </div>
-                <div class="form-group form-check">
-                    <div class="form-row">
-                        <div class="col-3">
-                            <label>Giới tính:</label>
-                        </div>
-                        <div class="col-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="msex" value="Nam" required> Nam
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>
-                            </label>
-                        </div>
-                        <div class="col-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="fmsex" value="Nữ" required> Nữ
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>
-                            </label>
-                        </div>
-                        <div class="col-3">
-                            <label class="form-check-label">
-                                <input class="form-check-input" type="radio" name="othersex" value="LGBT" required> Khác
-                                <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>
-                            </label>
-                        </div>
-                    </div>
-                </div>
+<%--                <div class="form-group form-check">--%>
+<%--                    <div class="form-row">--%>
+<%--                        <div class="col-3">--%>
+<%--                            <label>Giới tính:</label>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-3">--%>
+<%--                            <label class="form-check-label">--%>
+<%--                                <input class="form-check-input" type="radio" name="msex" value="Nam" required> Nam--%>
+<%--                                <div class="valid-feedback">Valid.</div>--%>
+<%--                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>--%>
+<%--                            </label>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-3">--%>
+<%--                            <label class="form-check-label">--%>
+<%--                                <input class="form-check-input" type="radio" name="fmsex" value="Nữ" required> Nữ--%>
+<%--                                <div class="valid-feedback">Valid.</div>--%>
+<%--                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>--%>
+<%--                            </label>--%>
+<%--                        </div>--%>
+<%--                        <div class="col-3">--%>
+<%--                            <label class="form-check-label">--%>
+<%--                                <input class="form-check-input" type="radio" name="othersex" value="LGBT" required> Khác--%>
+<%--                                <div class="valid-feedback">Valid.</div>--%>
+<%--                                <div class="invalid-feedback">Vui lòng nhập vào để tiếp tục.</div>--%>
+<%--                            </label>--%>
+<%--                        </div>--%>
+<%--                    </div>--%>
+<%--                </div>--%>
                 <div class="text-center">
                     <button type="submit" class="btn btn-primary mb-2">Cập nhật thay đổi</button>
                 </div>

@@ -1,8 +1,7 @@
 package Model;
 
-import Model.Login.ConnectDB;
-import Model.Page.MStore;
-import Model.Page.ManaP;
+import ConnectDB.ConnectDB;
+import Entity.MStore;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;

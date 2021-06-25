@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/style-gioithieu.css">
     <link rel="stylesheet" href="css/style-login-signup.css">
     <script src="js/vadi-login-signup.js"></script>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
     <title>Gioi thieu</title>
 </head>
 

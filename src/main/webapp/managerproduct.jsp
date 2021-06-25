@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/style-uploadproduct.css">
 
     <script src="js/vadi-login-signup.js"></script>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
     <title>Tin Tức</title>
 </head>
 

@@ -21,6 +21,7 @@
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <script src="https://cdn.ckeditor.com/ckeditor5/27.1.0/classic/ckeditor.js"></script>
     <link rel="stylesheet" href="css/style-post.css">
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
     <title>Hướng dẫn cách làm salad giảm cân giúp bạn lấy lại vóc dáng thon gọn</title>
 </head>
 

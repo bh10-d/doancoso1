@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style-login-signup.css">
     <link rel="stylesheet" href="css/style-managerproduct.css">
     <link rel="stylesheet" href="css/style-uploadproduct.css">
-
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
 
     <script src="js/vadi-login-signup.js"></script>
     <style>
@@ -94,16 +94,66 @@
                     <div class="col-2">id</div>
                     <div class="col-3">username</div>
                     <div class="col-3">password</div>
-                    <div class="col-2">Chỉnh sửa</div>
-                    <div class="col-2">Xoá</div>
+                    <div class="col-2"><%--Chỉnh sửa--%></div>
+                    <div class="col-2"><%--Xoá--%></div>
                 </div>
                 <c:forEach items="${sessionScope.sessionaccount}" var="account">
                     <div class="row text-center ele-table">
                         <div class="col-2">${account.id}</div>
                         <div class="col-3">${account.username}</div>
+
+
+
+
+
+
                         <div class="col-3"><%--${account.password}--%>********</div>
-                        <div class="col-2"><a href="EditAccount?id=${account.id}"><i class="fas fa-edit"></i></a></div>
-                        <div class="col-2"><a href="DelAccount?id=${account.id}"><i class="fas fa-trash"></i></a></div>
+                        <%----%>
+
+
+                        <div class="col-2"><a href="EditAccount?id=${account.id}" type="button" <%--data-toggle="modal" data-target="#myModal"--%>><i class="fas fa-edit"></i></a></div>
+
+<%--                            <div class="modal" id="myModal">--%>
+
+<%--                                <div class="modal-dialog modal-dialog-centered">--%>
+
+<%--                                    <div class="modal-content">--%>
+<%--                                        <div class="modal-header">--%>
+<%--                                            <h4 class="modal-title">Chỉnh sửa mật khẩu</h4>--%>
+<%--                                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->--%>
+<%--                                        </div>--%>
+
+<%--                                        <div class="modal-body">--%>
+
+<%--                                                <form action="EditAccount?iddd=${accountid.id}" method="post">--%>
+<%--                                                    <div class="form-group">--%>
+<%--                                                        <label for="password">Nhập mật khẩu mới: </label>--%>
+<%--                                                        <input type="text" name="password" id="password" class="form-control" placeholder="Nhập mật khẩu">--%>
+<%--                                                    </div>--%>
+<%--                                                    <button type="submit" class="btn btn-success">Cập nhật</button>--%>
+<%--                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Huỷ</button>--%>
+<%--                                                </form>--%>
+
+
+<%--                                        </div>--%>
+
+<%--                                    </div>--%>
+
+<%--                                </div>--%>
+
+<%--                            </div>--%>
+
+<%--                            <button type="button" class="btn btn-danger mt-5"><i class="fas fa-trash"></i></button>--%>
+                        <div class="col-2"><a href="#" type="button"><i class="fas fa-trash"></i></a></div>
+
+
+
+
+
+                            <%----%>
+
+<%--                        <div class="col-2"><a href="EditAccount?id=${account.id}"><i class="fas fa-edit"></i></a></div>--%>
+<%--                        <div class="col-2"><a href="DelAccount?id=${account.id}"><i class="fas fa-trash"></i></a></div>--%>
                     </div>
                 </c:forEach>
             </div>

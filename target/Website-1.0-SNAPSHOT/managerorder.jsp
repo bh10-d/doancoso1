@@ -20,8 +20,18 @@
     <link rel="stylesheet" href="css/style-login-signup.css">
     <link rel="stylesheet" href="css/style-managerproduct.css">
     <link rel="stylesheet" href="css/style-uploadproduct.css">
-
     <script src="js/vadi-login-signup.js"></script>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
+    <style>
+        tr td{
+            border: 1px solid gray;
+        }
+        td{
+            text-align: center;
+            width: 250px;
+            padding: 10px;
+        }
+    </style>
     <title>Tin Tức</title>
 </head>
 <body>
@@ -45,8 +55,8 @@
                 <li class="nav-item">
                     <a href="ManagerOrder" class="nav-link bg-h">Quản lý đơn hàng</a>
                 </li>
-                <c:set var="sessionaccount" value="${sessionScope.sessionaccount}"/>
-                <c:if test="${sessionaccount != null}">
+                <c:set var="sessionaccount" value="${sessionScope.akou}"/>
+                <c:if test="${sessionaccount == 0}">
                     <li class="nav-item">
                         <a href="ManagerAccount" class="nav-link">Tài khoản đã đăng kí vào hệ thống</a>
                     </li>
@@ -55,6 +65,32 @@
         </div>
         <div class="col-xl-8 col-lg-8 col-sm-12">
             <h2>Quản lý đơn hàng</h2>
+            <table style="border: 1px solid gray">
+                <tr>
+                    <td>Mã đơn hàng</td>
+                    <td>Tên</td>
+                    <td>Tổng tiền (VNĐ)</td>
+                    <td>Tác vụ</td>
+                </tr>
+                <tr>
+                    <td>abcxyz</td>
+                    <td>hieu</td>
+                    <td>100.000</td>
+                    <td><a href="#">X</a></td>
+                </tr>
+                <tr>
+                    <td>abcxyz</td>
+                    <td>hieu</td>
+                    <td>100.000</td>
+                    <td><a href="#">X</a></td>
+                </tr>
+                <tr>
+                    <td>abcxyz</td>
+                    <td>hieu</td>
+                    <td>100.000</td>
+                    <td><a href="#">X</a></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>

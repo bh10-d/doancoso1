@@ -25,6 +25,7 @@
     <!-- link bootrap hieu -->
     <link rel="stylesheet" href="css/style-login-signup.css">
     <script src="js/vadi-login-signup.js"></script>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
     <title>Tin Tức</title>
 </head>
 
@@ -211,7 +212,7 @@
         <div class="row">
             <div class="col-xl-8 col-lg-8 col-md-12   left-side">
                 <div class="color-b" style="margin-top: 20px;">
-                    <div class="jumbotron text-center" style="background-image: url(Image/bg1h.png);">
+                    <div class="jumbotron text-center" style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Image/bg1h.png);">
                         <h1 style="color: white; font-weight: 400; font-size: 30px;">CHÀO MỪNG ĐẾN VỚI DIỄN ĐÀN</h1>
                         <h1 class="content">NÔNG SẢN VIỆT NAM</h1>
                     </div>

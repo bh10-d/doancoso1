@@ -30,73 +30,15 @@
     <!-- link bootrap hieu -->
     <link rel="stylesheet" href="css/style-login-signup.css">
     <script src="js/vadi-login-signup.js"></script>
+    <link rel="stylesheet" href="css/style-raucu.css" >
     <title>Trang Chu</title>
+    <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
 </head>
 
 <body>
 <!-- phan dau cua trang web -->
 
 <jsp:include page="elementpage/header.jsp"/>
-
-<!-- navigation -->
-<%--<nav>--%>
-<%--    <div class="navbar">--%>
-
-<%--        <div class="nav-sign">--%>
-<%--            <button type="button" onclick="openBtn()">--%>
-<%--                <i class="fa fa-bars"></i>--%>
-<%--            </button>--%>
-
-<%--        </div>--%>
-
-<%--        <div id="myNav" class="bars-reponsive">--%>
-<%--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>--%>
-<%--            <div class="bars-reponsive-content">--%>
-<%--                <a href="trangchu.html" >TRANG CHỦ</a>--%>
-<%--                <a href="gioithieu.html">GIỚI THIỆU</a>--%>
-<%--                <a href="RauCu.html">CỬA HÀNG</a>--%>
-<%--                <a href="blog.html">TIN TỨC</a>--%>
-<%--                <a href="lienhe.html">LIÊN HỆ</a>--%>
-<%--            </div>--%>
-
-<%--        </div>--%>
-
-
-<%--        <div class="navbar-link">--%>
-<%--            <a href="trangchu.html">TRANG CHỦ</a>--%>
-<%--            <a href="gioithieu.html">GIỚI THIỆU</a>--%>
-<%--            <a href="RauCu.html">CỬA HÀNG</a>--%>
-<%--            <a href="blog.html">TIN TỨC</a>--%>
-<%--            <a href="lienhe.html">LIÊN HỆ</a>--%>
-<%--        </div>--%>
-
-<%--        <div class="search-sign">--%>
-<%--            <button type="button" onclick="openSearch()">--%>
-<%--                <i class="fa fa-search"></i>--%>
-<%--            </button>--%>
-
-<%--        </div>--%>
-
-<%--        <div id="mySearch" class="search-responsive">--%>
-<%--            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>--%>
-<%--            <div class="search-responsive-content">--%>
-<%--                <form action="#">--%>
-<%--                    <input type="text" placeholder="Search...">--%>
-<%--                    <button type="submit"><i class="fa fa-search"></i></button>--%>
-<%--                </form>--%>
-<%--            </div>--%>
-
-<%--        </div>--%>
-
-<%--        <div class="SignIn-LogIn-nav">--%>
-<%--            <button type="button">--%>
-<%--                <i class="fas fa-sign-in-alt"></i>--%>
-<%--            </button>--%>
-<%--        </div>--%>
-
-<%--    </div>--%>
-<%--</nav>--%>
-
 <jsp:include page="elementpage/navbar.jsp"/>
 
 <!--background header-->

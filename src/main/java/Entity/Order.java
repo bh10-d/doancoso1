@@ -4,22 +4,26 @@ public class Order {
     private String idorder;
     private String iduser;
     private String codeorder;
-    private String nameorder;
+    private String statusorder;
     private float totalpriceorder;
     private String countorder;
+    private String listproduct;
 
-    public Order(String codeorder, String nameorder, float totalpriceorder, String countorder) {
-        this.codeorder = codeorder;
-        this.nameorder = nameorder;
-        this.totalpriceorder = totalpriceorder;
-        this.countorder = countorder;
-    }
-
-    public Order(String idorder, String iduser, String codeorder, String nameorder, float totalpriceorder, String countorder) {
+    public Order(String idorder,String iduser,String codeorder, String statusorder, float totalpriceorder, String countorder, String listproduct) {
         this.idorder = idorder;
         this.iduser = iduser;
         this.codeorder = codeorder;
-        this.nameorder = nameorder;
+        this.statusorder = statusorder;
+        this.totalpriceorder = totalpriceorder;
+        this.countorder = countorder;
+        this.listproduct = listproduct;
+    }
+
+    public Order(String idorder, String iduser, String codeorder, String statusorder, float totalpriceorder, String countorder) {
+        this.idorder = idorder;
+        this.iduser = iduser;
+        this.codeorder = codeorder;
+        this.statusorder = statusorder;
         this.totalpriceorder = totalpriceorder;
         this.countorder = countorder;
     }
@@ -48,12 +52,12 @@ public class Order {
         this.codeorder = codeorder;
     }
 
-    public String getNameorder() {
-        return nameorder;
+    public String getStatusorder() {
+        return statusorder;
     }
 
-    public void setNameorder(String nameorder) {
-        this.nameorder = nameorder;
+    public void setStatusorder(String statusorder) {
+        this.statusorder = statusorder;
     }
 
     public float getTotalpriceorder() {
@@ -71,4 +75,13 @@ public class Order {
     public void setCountorder(String countorder) {
         this.countorder = countorder;
     }
+
+    public String getListproduct() {
+        return listproduct;
+    }
+
+    public void setListproduct(String listproduct) {
+        this.listproduct = listproduct;
+    }
+
 }

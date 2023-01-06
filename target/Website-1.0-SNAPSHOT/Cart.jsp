@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/style-blog.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
           integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style-login-signup.css">
+    <script src="js/vadi-login-signup.js"></script>
     <link rel="shortcut icon" type="image/png" href="Image/logonongsanvnv2.png"/>
 </head>
 <body>
@@ -96,9 +98,9 @@
                             <ul class="list-unstyled mb-4">
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng tiền hàng</strong><strong>${total}</strong></li>
                                 <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Phí vận chuyển</strong><strong>Free ship</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>${vat}</strong></li>
-                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>
-                                    <h5 class="font-weight-bold">${sum} ₫</h5>
+<%--                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">VAT</strong><strong>${vat}</strong></li>--%>
+<%--                                <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">Tổng thanh toán</strong>--%>
+<%--                                    <h5 class="font-weight-bold">${sum} ₫</h5>--%>
                                 </li>
                             </ul><a href="order" class="btn btn-dark rounded-pill py-2 btn-block">Mua hàng</a>
                         </div>

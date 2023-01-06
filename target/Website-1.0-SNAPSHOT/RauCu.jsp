@@ -40,83 +40,6 @@
 
 <body>
 <jsp:include page="elementpage/header.jsp"/>
-
-<!-- navigation -->
-<%--<nav>--%>
-<%--    <div class="navbar">--%>
-
-<%--        <div class="nav-sign">--%>
-<%--            <button type="button" onclick="openBtn()">--%>
-<%--                <i class="fa fa-bars"></i>--%>
-<%--            </button>--%>
-
-<%--        </div>--%>
-
-<%--        <div id="myNav" class="bars-reponsive">--%>
-<%--            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>--%>
-<%--            <div class="bars-reponsive-content">--%>
-<%--                <a href="trangchu.jsp">TRANG CHỦ</a>--%>
-<%--                <a href="gioithieu.jsp">GIỚI THIỆU</a>--%>
-<%--                <!-- cửa hàng -->--%>
-
-<%--                <!-- end -->--%>
-<%--                <a href="RauCu.jsp">CỬA HÀNG</a>--%>
-<%--                <a href="blog.jsp">TIN TỨC</a>--%>
-<%--                <a href="lienhe.jsp">LIÊN HỆ</a>--%>
-<%--            </div>--%>
-
-<%--        </div>--%>
-
-
-<%--        <div class="navbar-link">--%>
-<%--            <div class="head-link"><a href="Trangchu">TRANG CHỦ</a></div>--%>
-<%--            <div class="head-link"><a href="Gioithieu">GIỚI THIỆU</a></div>--%>
-
-<%--            <!-- chổ ni xổ xuống -->--%>
-<%--            <div class="dropdown">--%>
-<%--                <div class="head-link"><a href="">CỬA HÀNG</a></div>--%>
-<%--                <div class="dropdown-content">--%>
-<%--                    <ul>--%>
-<%--                        <li><a href="StoreControl">Rau Củ</a></li>--%>
-<%--                        <li><a href="HaiSan.jsp">Hải Sản</a></li>--%>
-<%--                        <li><a href="TraiCay.jsp">Trái Cây</a></li>--%>
-<%--                        <li><a href="DoUong.jsp">Đồ Uống</a></li>--%>
-<%--                        <li><a href="DoKho.jsp">Đồ Khô</a></li>--%>
-<%--                        <li><a href="ThitTrung.jsp">Thịt Trứng</a></li>--%>
-<%--                    </ul>--%>
-<%--                </div>--%>
-<%--            </div>--%>
-
-
-<%--            <!-- <a href="RauCu.html">CỬA HÀNG</a> -->--%>
-<%--            <div class="head-link"><a href="blog.jsp">TIN TỨC</a></div>--%>
-<%--            <div class="head-link"><a href="lienhe.jsp">LIÊN HỆ</a></div>--%>
-<%--        </div>--%>
-
-<%--        <div class="search-sign">--%>
-<%--            <button type="button" onclick="openSearch()">--%>
-<%--                <i class="fa fa-search"></i>--%>
-<%--            </button>--%>
-
-<%--        </div>--%>
-
-<%--        <div id="mySearch" class="search-responsive">--%>
-<%--            <a href="javascript:void(0)" class="closebtn" onclick="closeSearch()">&times;</a>--%>
-<%--            <div class="search-responsive-content">--%>
-<%--                <form action="#">--%>
-<%--                    <input type="text" placeholder="Search...">--%>
-<%--                    <button type="submit"><i class="fa fa-search"></i></button>--%>
-<%--                </form>--%>
-<%--            </div>--%>
-<%--        </div>--%>
-
-<%--        <div class="SignIn-LogIn-nav">--%>
-<%--            <button type="button">--%>
-<%--                <i class="fas fa-sign-in-alt"></i>--%>
-<%--            </button>--%>
-<%--        </div>--%>
-<%--    </div>--%>
-<%--</nav>--%>
 <jsp:include page="elementpage/navbar.jsp"/>
 
 <!--Main-->
@@ -127,11 +50,11 @@
             <span>/</span>
             <a href="RauCu.html" class="active" style="color: black;font-weight: bold;">RAU CỦ</a>
         </div>
-        <div class="searching">
-            <form>
-                <input type="text" id="text-type" name="search" placeholder="Nhập Sản Phẩm...">
-            </form>
-        </div>
+<%--        <div class="searching">--%>
+<%--            <form>--%>
+<%--                <input type="text" id="text-type" name="search" placeholder="Nhập Sản Phẩm...">--%>
+<%--            </form>--%>
+<%--        </div>--%>
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -180,46 +103,18 @@
                 <aside id="form-2">
                     <span class="list-group-item" id="list-title">SẢN PHẨM PHỔ BIẾN</span>
                     <ul class="list-group list-commoner">
-                        <li class="list-group-item" style="width: 100%;float: left;">
-                            <a href="">
-                                <img style="width: 60px;height: 60px;float: left;" src="Image/bapcai.jpg"
-                                     alt="img-1">
-                                <span class="product-title">Bắp cải</span>
-                                <span class="d-block">65,000&nbsp;<span>₫</span></span>
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="width: 100%;float: left;">
-                            <a href="">
-                                <img style="width: 60px;height: 60px;float: left;" src="Image/bapmi.jpg"
-                                     alt="img-2">
-                                <span class="product-title">Bắp mỹ</span>
-                                <span class="d-block">75,000&nbsp;<span>₫</span></span>
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="width: 100%;float: left;">
-                            <a href="">
-                                <img style="width: 60px;height: 60px;float: left;" src="Image/chuoi.jpg"
-                                     alt="img-3">
-                                <span class="product-title">Chuối</span>
-                                <span class="d-block">35,000&nbsp;<span>₫</span></span>
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="width: 100%;float: left;">
-                            <a href="">
-                                <img style="width: 60px;height: 60px;float: left;" src="Image/cachua.jpg"
-                                     alt="img-4">
-                                <span class="product-title">Cà chua</span>
-                                <span class="d-block">75,000&nbsp;<span>₫</span></span>
-                            </a>
-                        </li>
-                        <li class="list-group-item" style="width: 100%;float: left;">
-                            <a href="">
-                                <img style="width: 60px;height: 60px;float: left;" src="Image/otchuong.jpg"
-                                     alt="img-5">
-                                <span class="product-title">Ớt chuông</span>
-                                <span class="d-block">55,000&nbsp;<span>₫</span></span>
-                            </a>
-                        </li>
+                        <c:forEach items="${requestScope.productlist}" var="product" varStatus="loop">
+                            <c:if test="${loop.index<5}">
+                            <li class="list-group-item" style="width: 100%;float: left;">
+                                <a href="">
+                                    <img style="width: 60px;height: 60px;float: left;" src="${product.imgurl}"
+                                         alt="img-1">
+                                    <span class="product-title">${product.name}</span>
+                                    <span class="d-block">${product.price}&nbsp;<span>₫</span></span>
+                                </a>
+                            </li>
+                            </c:if>
+                        </c:forEach>
                     </ul>
                 </aside>
             </div>

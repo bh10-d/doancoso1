@@ -16,7 +16,7 @@
             <a href="Index"><img src="Image/logo.png" alt=""></a>
         </div>
         <div class="navbar-search">
-            <form action="#">
+            <form action="Search" method="get">
                 <input type="text" name="search" placeholder="Search...">
                 <button type="submit"><i class="fas fa-search"></i></button>
             </form>

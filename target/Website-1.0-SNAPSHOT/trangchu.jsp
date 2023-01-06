@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Administrator
-  Date: 29/05/2021
-  Time: 9:07 SA
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -154,75 +148,73 @@
 
 <!-- slide sản phẩm bán chạy -->
 <section class="div3">
-    <h2>Sản phẩm bán chạy</h2>
+    <h2>SẢN PHẨM BÁN CHẠY</h2>
     <div class="item-slide glide">
         <div class="glide__track" data-glide-el="track">
             <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <a href="StoreControl">
+                            <div class="product">
+                                <img src="Image/bapcai.jpg" alt="">
+                                <p class="nameProduct">Bắp cải</p>
+                            </div>
+                        </a>
+                    </li>
                 <li class="glide__slide">
-                    <a href="RauCu.html">
-                        <div class="product">
-                            <img src="Image/bapcai.jpg" alt="">
-                            <p class="nameProduct">bắp cải</p>
-                        </div>
-                    </a>
-                </li>
-
-
-                <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/otchuong.jpg" alt="">
-                            <p class="nameProduct">ớt chuông</p>
+                            <p class="nameProduct">Ớt chuông</p>
                         </div>
                     </a>
                 </li>
 
 
                 <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/dautaydalat.jpg" alt="">
-                            <p class="nameProduct">dâu Đà Lạt</p>
+                            <p class="nameProduct">Dâu Đà Lạt</p>
                         </div>
                     </a>
                 </li>
 
 
                 <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/chuoi.jpg" alt="">
-                            <p class="nameProduct">chuối</p>
+                            <p class="nameProduct">Chuối</p>
                         </div>
                     </a>
                 </li>
 
 
                 <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/chanh_ko_hat.jpg" alt="">
-                            <p class="nameProduct">chanh tươi</p>
+                            <p class="nameProduct">Chanh tươi</p>
                         </div>
                     </a>
                 </li>
 
 
                 <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/nho_mi.jpg" alt="">
-                            <p class="nameProduct">nho Mĩ</p>
+                            <p class="nameProduct">Nho Mĩ</p>
                         </div>
                     </a>
                 </li>
 
 
                 <li class="glide__slide">
-                    <a href="RauCu.html">
+                    <a href="StoreControl">
                         <div class="product">
                             <img src="Image/bapmi.jpg" alt="">
-                            <p class="nameProduct">bắp Mĩ</p>
+                            <p class="nameProduct">Bắp Mĩ</p>
                         </div>
                     </a>
                 </li>
@@ -248,7 +240,7 @@
 <!-- html cua tin tuc -->
 <article class="section3">
     <div class="div4">
-        <h2>Tin tức</h2>
+        <h2>TIN TỨC</h2>
 
         <div class="all-article">
 

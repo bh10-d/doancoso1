@@ -27,7 +27,7 @@ public class ShowCartControl extends HttpServlet {
                     list.add(dao.getProduct(s));
                 }
                 System.out.println("showcart: "+o.getValue());
-                System.out.println("list: "+list);
+//                System.out.println("list: "+list);
             }
 
         }
@@ -42,7 +42,7 @@ public class ShowCartControl extends HttpServlet {
                     list.get(i).setAmount(count);
                 }
             }
-            System.out.println("list get: "+list.get(i));
+//            System.out.println("list get: "+list.get(i));
             System.out.println("sizelist: "+list.size());
         }
         double total = 0;
@@ -51,8 +51,8 @@ public class ShowCartControl extends HttpServlet {
         }
         request.setAttribute("list", list); ///////////////////////
         request.setAttribute("total", total);
-        request.setAttribute("vat", 0.1 * total);
-        request.setAttribute("sum", 1.1 * total);
+//        request.setAttribute("vat", 0.1 * total);
+//        request.setAttribute("sum", 1.1 * total);
         request.getRequestDispatcher("Cart.jsp").forward(request, response);
     }
 

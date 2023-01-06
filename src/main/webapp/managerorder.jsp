@@ -68,28 +68,36 @@
             <table style="border: 1px solid gray">
                 <tr>
                     <td>Mã đơn hàng</td>
-                    <td>Tên</td>
+                    <td>Trạng thái</td>
                     <td>Tổng tiền (VNĐ)</td>
+                    <td>Tổng sản phẩm</td>
+                    <td>Chi tiết</td>
                     <td>Tác vụ</td>
                 </tr>
-                <tr>
-                    <td>abcxyz</td>
-                    <td>hieu</td>
-                    <td>100.000</td>
-                    <td><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td>abcxyz</td>
-                    <td>hieu</td>
-                    <td>100.000</td>
-                    <td><a href="#">X</a></td>
-                </tr>
-                <tr>
-                    <td>abcxyz</td>
-                    <td>hieu</td>
-                    <td>100.000</td>
-                    <td><a href="#">X</a></td>
-                </tr>
+                <c:if test="${sessionaccount == 0}">
+                    <c:forEach items="${requestScope.listorderad}" var="orderad">
+                        <tr>
+                            <td>${orderad.codeorder}</td>
+                            <td>${orderad.statusorder}</td>
+                            <td>${orderad.totalpriceorder}</td>
+                            <td>${orderad.countorder}</td>
+                            <td><a href="DetailOrder?id=${orderad.idorder}"><i class="fas fa-bars"></i></a></td>
+                            <td><a href="DelOrder?id=${orderad.idorder}"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                    </c:forEach>
+                </c:if>
+                <c:if test="${sessionaccount != 0}">
+                    <c:forEach items="${requestScope.listorder}" var="order">
+                        <tr>
+                            <td>${order.codeorder}</td>
+                            <td>${order.statusorder}</td>
+                            <td>${order.totalpriceorder}</td>
+                            <td>${order.countorder}</td>
+                            <td><a href="DetailOrder?id=${order.idorder}"><i class="fas fa-bars"></i></a></td>
+                            <td><a href="DelOrder?id=${order.idorder}"><i class="fas fa-trash"></i></a></td>
+                        </tr>
+                    </c:forEach>
+                </c:if>
             </table>
         </div>
     </div>

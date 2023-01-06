@@ -17,6 +17,7 @@ public class StoreControl extends HttpServlet {
         List<MStore> list = manaP.listdb();
         request.setAttribute("productlist",list);
         request.getRequestDispatcher("RauCu.jsp").forward(request,response);
+        System.out.println(list);
     }
 
     @Override

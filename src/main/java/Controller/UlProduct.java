@@ -1,6 +1,7 @@
 package Controller;
 
 import DAO.ExDB;
+import DAO.Filter;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -42,7 +43,10 @@ public class UlProduct extends HttpServlet {
             String idstr = String.valueOf(ss.getAttribute("id"));
             int id = Integer.parseInt(idstr);
 
-            e.insert(namep,pricep,typep,detailp,3,id,path);
+            Filter filter = new Filter();
+            int idoc = filter.convertnum(filter.convert(typep));
+
+            e.insert(namep,pricep,typep,detailp,idoc,id,path);
 
 
 //            ss.setAttribute("idproduct",);

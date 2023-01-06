@@ -7,48 +7,45 @@ public class MStore {
     private String imgurl;
     private int price;
     private String description;
-    private String idoc;
+    private String cname;
 
-    public MStore() {
+    public MStore(String cname) {
+        this.cname = cname;
     }
-    public MStore(String type){
-        this.type = type;
-    }
-    public MStore(int idproduct,String name, int price, String description, String idoc, String imgurl) {
+    public MStore(int idproduct,String name, String type, int price, String description, String imgurl) {
         this.idproduct = idproduct;
         this.name = name;
         this.price = price;
         this.description = description;
-        this.idoc = idoc;
+        this.type = type;
         this.imgurl = imgurl;
     }
 
-    public MStore(int idproduct,String name, int price, String description, String idoc, String imgurl,String type) {
+    public MStore(int idproduct,String name, int price, String description, String type, String imgurl) {
         this.idproduct = idproduct;
         this.name = name;
         this.price = price;
         this.description = description;
-        this.idoc = idoc;
-        this.imgurl = imgurl;
-        this.type = type;
-    }
-
-    public MStore(int idproduct,String name, int price, String description, String imgurl) {
-        this.idproduct = idproduct;
-        this.name = name;
-        this.price = price;
-        this.description = description;
-        this.imgurl = imgurl;
-    }
-
-
-    public MStore(String name, String type, String imgurl, int price, String description) {
-        this.name = name;
         this.type = type;
         this.imgurl = imgurl;
-        this.price = price;
-        this.description = description;
     }
+
+//    public MStore(int idproduct,String name, int price, String description, String imgurl) {
+//        this.idproduct = idproduct;
+//        this.name = name;
+//        this.price = price;
+//        this.description = description;
+//        this.imgurl = imgurl;
+//    }
+
+
+//    public MStore(String name, String type, String imgurl, int price, String description) {
+//        this.name = name;
+//        this.type = type;
+//        this.imgurl = imgurl;
+//        this.price = price;
+//        this.description = description;
+//    }
 
 
 
@@ -100,15 +97,15 @@ public class MStore {
         this.description = description;
     }
 
-    public String getIdoc() {
-        return idoc;
+    public String getCname() {
+        return cname;
     }
 
-    public void setIdoc(String idoc) {
-        this.idoc = idoc;
+    public void setCname(String cname) {
+        this.cname = cname;
     }
 
-    //    @Override
+//    @Override
 //    public String toString() {
 //        return "MStore{" +
 //                "name='" + name + '\'' +
@@ -116,4 +113,22 @@ public class MStore {
 //                ", description='" + description + '\'' +
 //                '}';
 //    }
+
+
+//    @Override
+//    public String toString() {
+//        return "MStore{" +
+//                "idproduct=" + idproduct +
+//                ", name='" + name + '\'' +
+//                ", imgurl='" + imgurl + '\'' +
+//                ", price=" + price +
+//                ", description='" + description + '\''  + '\'' +
+//                "}\n";
+//    }
+
+
+    @Override
+    public String toString() {
+        return  cname;
+    }
 }

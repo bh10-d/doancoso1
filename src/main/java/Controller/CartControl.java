@@ -26,7 +26,7 @@ public class CartControl extends HttpServlet {
             txt = id;
         } else {
             txt = txt + "-" + id;
-            System.out.println("txt if: "+txt);
+//            System.out.println("txt if: "+txt);
         }
             Cookie c = new Cookie("id", txt);
 
